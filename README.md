@@ -1,1 +1,1 @@
-# minttusofia.github.io
+This is the source code to Minttu Alakuijala's public academic website, https://minttualakuijala.com/, adapted from Jon Barron's website: https://jonbarron.info/. You are welcome to clone this code for your own personal use, just please attribute the source to the original website or to this repo.
