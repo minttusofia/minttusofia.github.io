@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Minttu Alakuijala</name>
               </p>
-	      <p>I am a Postdoctoral Researcher at <a href="https://aalto.fi/en">Aalto University</a> working on language-conditioned reinforcement learning (RL). I am working with <a href="https://people.aalto.fi/samuel.kaski">Samuel Kaski</a> and <a href="https://users.ics.aalto.fi/pemartti/">Pekka Marttinen</a>, and I am a part of the <a href="https://research.cs.aalto.fi/pml/">Probabilistic Machine Learning</a> and <a href="https://aalto-ml4h.github.io">Machine Learning for Health</a> groups.
+	      <p>I am a Postdoctoral Researcher at <a href="https://aalto.fi/en">Aalto University</a> working on <b>language-conditioned reinforcement learning</b> (RL), and most recently, <b>systematic thinking in LLMs</b>. I am working with <a href="https://people.aalto.fi/samuel.kaski">Samuel Kaski</a> and <a href="https://users.ics.aalto.fi/pemartti/">Pekka Marttinen</a>, and I coordinate the <a href="https://fcai.fi/fcai-teams#foundation">Foundation models for language & reinforcement learning team</a> at <a href="https://fcai.fi">FCAI</a>, the Finnish Center for Artificial Intelligence.
               </p>
               <p>
 
@@ -46,10 +46,10 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My objective is to advance the scalability and sample-efficiency of RL. Specific topics I am interested in include <b>representation learning, policy priors, multi-task learning, self-supervised RL and learned reward functions</b>. I am particularly motivated by approaches that are applicable across environments and tasks, including but not limited to robotics.
+	      There are considerable mutual benefits to be gained from integrating ideas from reinforcement learning (RL) and language models. LLMs possess a real-world knowledge base that is vast but mostly static, and not specific enough for many environments. Moreover, decoding is typically greedy, without planning or lookahead. RL, on the other hand, formalizes learning from interaction, trading off exploration and short-term reward maximization, and planning with the future in mind.
 
-                </p><p>
-                As policy state inputs as well as pre-training data, I have worked extensively with image and video modalities; I am also increasingly interested in incorporating language modelling and building language-conditioned interactive agents.
+	      <p>
+	      My objective is twofold: I aim to <b>equip RL agents with world knowledge and transferable skills that models like LLMs and VLMs have learned</b> from internet-scale text and vision corpora. Furthermore, I am looking to <b>teach LLMs to think and plan more explicitly</b> – using utilities such as task decomposition and code – <b>and to learn from embodied interaction</b> like RL agents.
               </p>
             </td>
           </tr>
@@ -60,7 +60,62 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/icra2023_teaser.png' width="160">
+                <img src='images/vlc_teaser.png' width="170">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2405.19988">
+                <papertitle>Video-Language Critic: Transferable Reward Functions for Language-Conditioned Robotics</papertitle>
+              </a>
+              <br>
+              <strong>Minttu Alakuijala</strong>,
+              <a href="https://www.reggiemclean.ca/">Reginald McLean</a>,
+              <a href="https://cs.torontomu.ca/~iwoungan/">Isaac Woungang</a>,
+              <a href="http://narimanfarsad.com/">Nariman Farsad</a>,
+              <a href="https://kaski-lab.com/">Samuel Kaski</a>,
+              <a href="https://users.ics.aalto.fi/~pemartti/">Pekka Marttinen</a>,
+              <a href="https://scholar.google.com/citations?user=8eLlbhMAAAAJ&hl=en">Kai Yuan</a>
+              <br>
+              <em>CoRL 2024 Workshop on Language and Robot Learning</em> 
+              <br>
+              <a href="https://arxiv.org/abs/2405.19988">arXiv</a>
+              <p></p>
+              <p>
+               We train language-conditioned robotic reward functions from actor-agnostic data, and outperform 5 existing methods with a novel combination of contrastive and sequential ranking objectives, together ensuring both smooth and accurate rewards. 
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/cwm_teaser.png' width="170">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2405.15383">
+                <papertitle>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search</papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=tXmPE94AAAAJ&hl=en">Nicola Dainese</a>,
+              <a href="https://scholar.google.com/citations?user=2_dW7y4AAAAJ&hl=en">Matteo Merler</a>,
+              <strong>Minttu Alakuijala</strong>,
+              <a href="https://users.ics.aalto.fi/~pemartti/">Pekka Marttinen</a>
+              <br>
+              <em>NeurIPS 2024</em> 
+              <br>
+              <a href="https://arxiv.org/abs/2405.15383">arXiv</a>
+              <p></p>
+              <p>
+                We propose to model RL environments with code written by an LLM, propose a method to improve code generation for this task and show how to plan with code world models.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/icra2023_teaser.png' width="170">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -89,7 +144,7 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/rrlfd_teaser.png' width="160">
+                <img src='images/rrlfd_teaser.png' width="170">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -118,7 +173,7 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/narrated_actions_teaser.png' width="160">
+                <img src='images/narrated_actions_teaser.png' width="170">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
